@@ -46,11 +46,20 @@ function App() {
         </ul>
       </header>
       <div className="content">
-        <h1>Все кроссовки</h1>
+        <div className="content__top">
+          <h1>Все кроссовки</h1>
+          <div className="search-block">
+            <img src="/img/search.svg" alt="Search"/>
+            <input className="search__input" placeholder="Поиск..." />
+          </div>
+        </div>
 
         <div className="sneakers">
           
           <div className="card">
+            <button className="card__favorite">
+              <img width={32} height={32} src="/img/heart-unlike.svg" alt="heart logo"/>
+            </button>
             <img width={133} height={112} src="/img/sneakers/1.jpg" alt="Sneakers" />
             <p>Мужские Кроссовки Nike Blazer Mid Suede</p>
             <div className="card__bottom">

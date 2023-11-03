@@ -1,11 +1,11 @@
 * {
   box-sizing: border-box;
   outline: none;
+  font-family: "Inter", system-ui;
 }
 
 body {
   margin: 0;
-  font-family: "Inter", system-ui;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color: #E7F6FF;
@@ -14,6 +14,10 @@ body {
 a {
   color: inherit;
   text-decoration: none;
+}
+
+h1 {
+  margin: 0;
 }
 
 ul {
@@ -85,13 +89,30 @@ li {
   padding: 40px;
 }
 
-.content h1 {
-  margin: 0 0 40px 0;
+.content__top {
+  display: flex;
+  align-items: center;
+  margin-bottom: 40px;
+  justify-content: space-between;
 }
 
 .sneakers {
   display: flex;
   gap: 40px;
+}
+
+.search-block {
+  display: flex;
+  border: 1px solid #f3f3f3;
+  border-radius: 10px;
+  padding: 0 15px;
+}
+
+.search__input {
+  border: 0;
+  padding: 13px;
+  font-size: 14px;
+  width: 250px;
 }
 
 
@@ -102,12 +123,17 @@ li {
   padding: 30px;
   width: 220px;
   border-radius: 40px;
+  position: relative;
   /* margin-right: 40px; */
 }
 
 .card p {
   font-weight: 400;
   font-size: 14px;
+}
+
+.card__favorite {
+  position: absolute;
 }
 
 .card__bottom {
