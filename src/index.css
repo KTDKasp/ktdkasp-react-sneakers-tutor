@@ -43,7 +43,7 @@ li {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 45px 60px;
+  padding: 45px;
   border-bottom: 1px solid #eaeaea;
 }
 
@@ -86,7 +86,7 @@ li {
 /*  Content  */
 
 .content {
-  padding: 40px;
+  padding: 45px;
 }
 
 .content__top {
